@@ -14,7 +14,7 @@ mkdir -p $TMPDIR
 # Define container and script paths
 container=/home/rglz/containers/gfae.sif
 MINICONDA_PATH=/opt/conda/bin/activate
-script_path=/ptmp/aeroglu/piloting_May2025/scripts/mp2rage_recon-all_updated.py
+script_path=/ptmp/aeroglu/piloting_May2025/libs/mp2rage_recon-all/code/mp2rage_recon-all_updated.py
 
 # Log the start time
 echo "Starting mp2rage_recon-all job at $(date)"

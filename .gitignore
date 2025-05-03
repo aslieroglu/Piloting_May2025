@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# macOS
+.DS_Store
+
+# nifti
+*.nii
+*.nii.gz
+
+# Ignore data folders
+ground_truth/      
+mp2rage_seq/          
+real_time/           

@@ -1,0 +1,9 @@
+[submodule "libs/vdfs"]
+	path = libs/vdfs
+	url = https://github.com/aslieroglu/vdfs.git
+[submodule "libs/mp2rage_recon-all"]
+	path = libs/mp2rage_recon-all
+	url = https://github.com/aslieroglu/mp2rage_recon-all.git
+[submodule "libs/asrs"]
+	path = libs/asrs
+	url = https://github.com/aslieroglu/asrs.git

@@ -1,0 +1,73 @@
+Traceback (most recent call last):
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/session.py", line 416, in __server_version
+    conn = next(iter(self.pool.active))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/pool.py", line 93, in get_connection
+    conn = self.idle.pop()
+           ^^^^^^^^^^^^^^^
+KeyError: 'pop from an empty set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/connection.py", line 169, in recv
+    msg = iRODSMessage.recv(self.socket)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/message/__init__.py", line 340, in recv
+    rsp_header_size = _recv_message_in_len(sock, 4)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/message/__init__.py", line 216, in _recv_message_in_len
+    buf = sock.recv(size_left, socket.MSG_WAITALL)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<stdin>", line 33, in <module>
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/manager/collection_manager.py", line 26, in get
+    query = self.sess.query(Collection).filter(*filters)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/session.py", line 345, in query
+    return Query(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/query.py", line 53, in __init__
+    if self.sess.server_version >= col.min_version:
+       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/session.py", line 379, in server_version
+    return self._server_version()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/session.py", line 412, in _server_version
+    return self.__server_version() if version_func is None else version_func(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/session.py", line 419, in __server_version
+    conn = self.pool.get_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/pool.py", line 18, in method_
+    ret = method(self, *s, **kw)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/pool.py", line 117, in get_connection
+    conn = Connection(self, self.account)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/connection.py", line 118, in __init__
+    self._login_native()
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/connection.py", line 671, in _login_native
+    challenge_msg = self.recv()
+                    ^^^^^^^^^^^
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/connection.py", line 180, in recv
+    raise NetworkException("Could not receive server response")
+irods.exception.NetworkException: Could not receive server response
+Exception ignored in: <function Connection.__del__ at 0x7ff770c9d620>
+Traceback (most recent call last):
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/connection.py", line 147, in __del__
+    self.disconnect()
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/connection.py", line 376, in disconnect
+    self.send(disconnect_msg)
+  File "/home/aeroglu/irods-env/lib/python3.11/site-packages/irods/connection.py", line 163, in send
+    raise NetworkException("Unable to send message")
+irods.exception.NetworkException: Unable to send message

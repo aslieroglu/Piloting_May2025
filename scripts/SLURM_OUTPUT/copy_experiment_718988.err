@@ -1,0 +1,5 @@
+WARNING: While bind mounting '/home/aeroglu:/home/aeroglu': destination is already in the mount point list
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+  File "<frozen os>", line 679, in __getitem__
+KeyError: 'EXPERIMENT_NAME'

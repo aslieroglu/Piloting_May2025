@@ -6,7 +6,7 @@ This repository includes scripts for preparing and processing 9.4T MRI data in a
 
 ---
 
-## 1. `setup_subject_project.sh`
+## 1. `copy_experiment.sbatch.sh`
 
 ### Purpose
 

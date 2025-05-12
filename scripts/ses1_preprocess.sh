@@ -1,5 +1,5 @@
-#!/bin/bash
-subject="sub-01" # Enter subject ID
+#!/bin/bash 
+subject="sub-04" # Enter subject ID
 EXPERIMENT_TYPE=real_time #Options: real_time, mp2rage_seq, ground_truth
 studyDataDir="/ptmp/aeroglu/piloting_May2025/${EXPERIMENT_TYPE}/project"
 
@@ -9,7 +9,7 @@ fullbrain_reverse_epi_location="${studyDataDir}/${subject}/ses-1/fmap/${subject}
 curDir=$(pwd)
 
 ref_anat_dir=${studyDataDir}/derivatives/ref_anat/${subject}
-fs_dir=${studyDataDir}/derivatives/mprage_recon-all/${subject}/freesurfer
+fs_dir=${studyDataDir}/derivatives/mprage_recon-all/${subject}/${subject}/freesurfer
 
 mc_and_average_scan() {
     in_file=$1

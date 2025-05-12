@@ -12,10 +12,11 @@
 # ==== (Optional) Load any modules you need ====
 # module load rsync   # if your cluster provides rsync as a module
 
-export RSYNC_RSH="ssh -i ~/.ssh/id_rsync_meduser"
+# expand $HOME so ssh can find the key
+export RSYNC_RSH="ssh -i $HOME/.ssh/id_rsync_meduser"
 
 # ==== Your rsync command ====
-LOCAL_DIR="/ptmp/aeroglu/piloting_May2025"
+LOCAL_DIR="/ptmp/aeroglu/piloting_May2025/"
 REMOTE_USER="meduser"
 REMOTE_HOST=10.41.60.157
 REMOTE_DIR="/home/meduser/realTimefMRI"

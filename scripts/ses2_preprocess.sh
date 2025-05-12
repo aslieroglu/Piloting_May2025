@@ -187,6 +187,11 @@ convert_to_ants() {
                         -o slab_in-fs_t1_viaants.nii 
 }
 
+# fs_surface_to_func(['slab_2_fs_T1_warp_ants.nii.gz'],fs_dir , analysis_dir=None, is_inverse_transform_flags=[True], force=False)
+# vdfs
+# dicom 2 nifti
+# visualize the label of result of the vdfs
+
 
 main() {
     curDir=$(pwd)

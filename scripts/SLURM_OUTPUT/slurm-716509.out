@@ -1,0 +1,16 @@
+Starting mp2rage_recon-all job at Tue May  6 14:35:16 CEST 2025
+stty: 'standard input': Inappropriate ioctl for device
+****** Using directory: /ptmp/aeroglu/piloting_May2025/real_time/project/derivatives/mprage_recon-all/sub-03/sub-03
+Traceback (most recent call last):
+  File "/ptmp/aeroglu/piloting_May2025/libs/mp2rage_recon-all/code/mp2rage_recon-all_updated.py", line 20, in <module>
+    anatomy.mp2rage_recon_all_updated(
+  File "/ptmp/aeroglu/piloting_May2025/libs/mp2rage_recon-all/code/anatomy.py", line 182, in mp2rage_recon_all_updated
+    mprageize(inv2_file, uni_file, uni_mprageized_file)
+  File "/ptmp/aeroglu/piloting_May2025/libs/mp2rage_recon-all/code/anatomy.py", line 66, in mprageize
+    shutil.copyfile(inv2_file, copied_inv2)
+  File "/opt/conda/lib/python3.11/shutil.py", line 256, in copyfile
+    with open(src, 'rb') as fsrc:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/ptmp/aeroglu/piloting_May2025/real_time/project/0023_si_MP2RAGE_0p75_3x1_Lipsia_INV2.nii'
+srun: error: compute-1: task 0: Exited with exit code 1
+Finished mp2rage_recon-all job at Tue May  6 14:36:12 CEST 2025

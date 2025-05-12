@@ -1,0 +1,16 @@
+slurmstepd-compute-28: error: *** JOB 716741 ON compute-28 CANCELLED AT 2025-05-08T10:39:08 DUE TO TIME LIMIT ***
+rsync error: received SIGINT, SIGTERM, or SIGHUP (code 20) at rsync.c(644) [sender=3.1.3]
+rsync: stat "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13635#M174#D070525#T115009#ep2d_bold_800_whole_brain.dat.9UiKub" failed: No such file or directory (2)
+rsync: rename "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13635#M174#D070525#T115009#ep2d_bold_800_whole_brain.dat.9UiKub" -> "ground_truth/raw_data/KSVN-CXXX/TWIX/allData#S94Tuebingen#F13635#M174#D070525#T115009#ep2d_bold_800_whole_brain.dat": No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13636#M175#D070525#T115307#AdjFre.dat.WVW2Ra" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13637#M176#D070525#T115313#ep2d_bold_800_whole_brain_revpe.dat.0h4era" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13638#M177#D070525#T115611#gre_b0map_2D_multislice.dat.Q08dia" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13639#M178#D070525#T115752#AdjDico.dat.F27Tm8" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13640#M179#D070525#T115805#AdjFre.dat.vU9hC7" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13641#M180#D070525#T115810#AdjTra2D.dat.wENhC9" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13642#M181#D070525#T115817#AdjDico.dat.aDruRa" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13643#M182#D070525#T115827#AdjFieldMap.dat.GZGlaa" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13644#M183#D070525#T115900#AdjFieldMap.dat.rJNQg8" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13645#M184#D070525#T115923#AdjFre.dat.stwwD8" failed: No such file or directory (2)
+rsync: mkstemp "/home/meduser/realTimefMRI/ground_truth/raw_data/KSVN-CXXX/TWIX/.allData#S94Tuebingen#F13646#M185#D070525#T115932#gre_b0map_2D_multislice.dat.qx7Up7" failed: No such file or directory (2)
+rsync: [sender] write error: Broken pipe (32)

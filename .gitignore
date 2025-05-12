@@ -19,4 +19,8 @@ venv/
 # Ignore data folders
 ground_truth/      
 mp2rage_seq/          
-real_time/           
+real_time/     
+
+# Error and output files of slurm
+*.out
+*.err
